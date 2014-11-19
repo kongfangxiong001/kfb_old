@@ -13,15 +13,15 @@ CREATE TABLE IF NOT EXISTS `allot` (
 -- --------------------------------------------------------
 
 --
--- 表的结构 `invest`
+-- 表的结构 `income`
 --
 
-CREATE TABLE IF NOT EXISTS `invest` (
-  `invest_id` int(10) NOT NULL AUTO_INCREMENT COMMENT '投资id',
+CREATE TABLE IF NOT EXISTS `income` (
+  `income_id` int(10) NOT NULL AUTO_INCREMENT COMMENT '投资id',
   `user_id` int(10) NOT NULL COMMENT '投资者id',
-  `invest_time` int(10) NOT NULL COMMENT '投入的时刻',
+  `income_time` int(10) NOT NULL COMMENT '投入的时刻',
   `money` decimal(12,2) NOT NULL COMMENT '转入的资金',
-  PRIMARY KEY (`invest_id`)
+  PRIMARY KEY (`income_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='投资记录表' AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------

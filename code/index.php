@@ -11,3 +11,8 @@ $user  = new user();
 // $user->login(array('name'=>'xiaohong','password'=>'xiaohong123456'));
 print_r($_SESSION);
 //LOCK TABLES/UNLOCK TABLES句法
+
+$allot = new allot();
+// echo $allot->getTotalEffective();
+// echo $allot->getRate(30);
+echo $allot->getUserEffective(4);
